@@ -1,4 +1,7 @@
 ## What Really Happens When You Make an HTTP Request
+![alt text](image-6.png)
+![alt text](image-7.png)
+
 
 ![alt text](image.png)
 ![alt text](image-1.png)
