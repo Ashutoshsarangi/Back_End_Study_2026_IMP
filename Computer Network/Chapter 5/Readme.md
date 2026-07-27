@@ -25,4 +25,20 @@ That gateway IP is kept in memory as part of the routing table (and sometimes pe
 
 So the laptop stores the gateway as a **route entry**, not as a special “gateway file” by itself.
 
+## 07 How Default Gateways Facilitate Network Communication
 
+### Data transfer with same Network
+
+![alt text](image.png)
+
+
+### Data transfer with different Network
+
+![alt text](image-1.png)
+
+- So here it is sending the data via default router to the other network.
+
+
+
+Reference:- 
+- https://www.youtube.com/watch?v=PqdrgoYb3Vc&list=PLd1s-PEC5Pio&index=7
