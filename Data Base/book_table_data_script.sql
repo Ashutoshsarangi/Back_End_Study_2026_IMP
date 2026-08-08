@@ -66,7 +66,7 @@ CREATE TABLE ratings (
 INSERT INTO publishers (name, country, website) VALUES
 ('HarperCollins', 'United States', 'https://www.harpercollins.com'),
 ('Penguin Random House', 'United States', 'https://www.penguinrandomhouse.com'),
-('O''Reilly Media', 'United States', 'https://www.oreilly.com');
+('Ashu', 'India', 'https://www.oreilly.com');
 
 -- 2. INSERT AUTHORS
 INSERT INTO authors (first_name, last_name, bio) VALUES
