@@ -3,6 +3,12 @@
 
 **SQL triggers** are stored procedures that run automatically when a specified event happens on a table (or view): `INSERT`, `UPDATE`, or `DELETE`.
 
+
+## Conditional Triggers:-
+
+![alt text](image-6.png)
+
+
 ## What they do
 
 - Enforce rules that are hard to express with constraints alone
@@ -58,47 +64,6 @@ FOR EACH ROW
 EXECUTE FUNCTION audit_employee_changes();
 ```
 
----
-
-## MySQL / MariaDB
-
-```sql
-CREATE TRIGGER trigger_name
-{ BEFORE | AFTER }
-{ INSERT | UPDATE | DELETE }
-ON table_name
-FOR EACH ROW
-BEGIN
-  -- use NEW.column / OLD.column
-END;
-```
-
-Example:
-
-```sql
-CREATE TRIGGER trg_before_order_insert
-BEFORE INSERT ON orders
-FOR EACH ROW
-SET NEW.created_at = NOW();
-```
-
----
-
-## SQL Server (T-SQL)
-
-```sql
-CREATE TRIGGER trigger_name
-ON table_name
-AFTER INSERT, UPDATE, DELETE   -- or INSTEAD OF
-AS
-BEGIN
-  -- use inserted / deleted virtual tables
-  INSERT INTO audit_log(id, action)
-  SELECT id, 'INSERT' FROM inserted;
-END;
-```
-
----
 
 ## `NEW` / `OLD` (row-level)
 
